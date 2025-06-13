@@ -23,7 +23,6 @@ def check_winner(board, player):
 def is_board_full(board):
     return all(cell != " " for row in board for cell in row)
 
-# Get list of empty cells
 def get_available_moves(board):
     return [(i, j) for i in range(3) for j in range(3) if board[i][j] == " "]
 
